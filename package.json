@@ -1,0 +1,15 @@
+{
+  "name": "praktikum9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "dependencies": {
+    "tailwindcss": "^3.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M Rifki W",
+  "license": "ISC"
+}
