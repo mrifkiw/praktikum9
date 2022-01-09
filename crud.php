@@ -23,10 +23,10 @@
             $email = $data["email"];
             $address = $data["address"];
             $gender = $data["gender"];
-            $position = $data["positiion"];
+            $position = $data["position"];
             $status = $data["status"];
 
-            $query = "INSERT INTO mahasiswa(name, email, address, gender, position, status)
+            $query = "INSERT INTO karyawan(name, email, address, gender, position, status)
                     VALUES
                     ('$name', '$email', '$address', '$gender', '$position', '$status')
                 ";
