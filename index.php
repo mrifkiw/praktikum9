@@ -1,6 +1,5 @@
 <?php
 require('crud.php');
-
 $karywawan = query("SELECT * FROM karyawan");
 ?>
 
@@ -16,25 +15,8 @@ $karywawan = query("SELECT * FROM karyawan");
 </head>
 
 <body>
-
-    <nav class="bg-white border-gray-200 px-6 py-4 shadow">
-        <div class="flex justify-between items-center">
-            <span class="text-lg font-semibold">Karyawanku</span>
-            <ul class="flex gap-4">
-                <li>
-                    <a href="/" class="nav-item target:bg-blue-600" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="/tambah.php" class="nav-item target:bg-blue-600">Tambah Karyawan</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-
-
+    <?php include('navbar.php') ;?>
     <h1 class="flex justify-center py-10 font-sans font-medium text-2xl ">Daftar Karyawan</h1>
-
     <table class="mx-auto rounded-lg shadow">
         <thead class="bg-gray-100 dark:bg-gray-700">
             <tr>
@@ -75,15 +57,14 @@ $karywawan = query("SELECT * FROM karyawan");
                     <td class="table-row-cell"><?= $item["position"] ?></td>
                     <td class="table-row-cell"><?= $item["status"] ?></td>
                     <td class="table-row-cell">
-                        <a class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " href="hapus.php?id=<?= $item["id"]; ?>" onclick="return confirm('yakin?')">Hapus</a>
+                        <a class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " href="hapus.php?id=<?= $item["id"]; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data?')">
+                            Hapus
+                        </a>
                     </td>
                 </tr>
             <?php endforeach ?>
         </tbody>
     </table>
-
-
-
 </body>
 
 </html>
