@@ -20,30 +20,14 @@ $karywawan = query("SELECT * FROM karyawan");
     <table class="mx-auto rounded-lg shadow">
         <thead class="bg-gray-100 dark:bg-gray-700">
             <tr>
-                <th class="table-head-cell">
-                    #
-                </th>
-                <th class="table-head-cell">
-                    Name
-                </th>
-                <th class="table-head-cell">
-                    Email
-                </th>
-                <th class="table-head-cell">
-                    Address
-                </th>
-                <th class="table-head-cell ">
-                    Gender
-                </th>
-                <th class="table-head-cell ">
-                    Position
-                </th>
-                <th class="table-head-cell ">
-                    Status
-                </th>
-                <th class="table-head-cell ">
-                    Action
-                </th>
+                <th class="table-head-cell">#</th>
+                <th class="table-head-cell">Name</th>
+                <th class="table-head-cell">Email</th>
+                <th class="table-head-cell">Address</th>
+                <th class="table-head-cell ">Gender</th>
+                <th class="table-head-cell ">Position</th>
+                <th class="table-head-cell ">Status</th>
+                <th class="table-head-cell ">Action</th>
             </tr>
         </thead>
         <tbody>
